@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">hey you are bot</div>
+    </div>
+    <button id="btn"><B>Change Content</B></button>
+    <script>
+        let button = document.getElementById("btn")
+
+        button.addEventListener("click", () => {
+            document.querySelector(".box").innerHTML = "<p> your click it </p>"
+        })
+        //e.stopPropagation() to stop bubbling 'mum,mh,ind'
+        // Element.onclick =
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        //to perform the code a lot of of time
+        setInterval(() => {
+            document.querySelector("#btn").style.background = getRandomColor()
+        }, 2000);
+        //clearInterval to stop
+        setTimeout(() => {
+            document.querySelector(".box").style.background = getRandomColor()
+        }, 5000);
+        //to perform only one time
+        //asyc fun
+        console.log("asyc fun print before the previous")
+        //callback fun is a taking a function as argument
+        // const loadScript =()=>{
+        //     let sc=document.createElement("script");
+        //     sc.src=src;
+        //     sc.onload=callback("Harry",fn);
+        //     document.head.append(sc)
+
+        let prom1 = new Promise((resolve, reject) => {
+            let a = Math.random();
+            if (a < 0.5) {
+                reject("no random number was not supporting you")
+            }
+            setTimeout(() => {
+                console.log("Yes I am done")
+                resolve("devop")
+            }, 3000);
+        })
+
+        prom1.then((a) => {
+            console.log(a)
+        }).catch((err) => {
+            console.log(err)
+        })
+        //asyc await use to avoid callbacks like .then
+        async function getData() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    console.log("Yes I am done")
+                    resolve("devop2")
+                }, 3000);
+            })
+        }
+        async function main() {
+            console.log("main function running")
+            let data = await getData()
+            console.log("line after await func")
+        }
+        main()
+        //fetch get more methods 
+        async function logMovies() {
+            const response = await fetch("http://example.com/movies.json");
+            const movies = await response.json();
+            console.log(movies);
+        }
+    </script>
+</body>
+
+</html>

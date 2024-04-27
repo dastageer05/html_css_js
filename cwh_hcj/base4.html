@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom management</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 45px;
+            width: 45px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" ,>box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box">box5</div>
+    </div>
+    
+</body>
+<script>
+        document.title = "DOM management"
+        // document.body.style.backgroundColor="Green"
+        // //inline css 
+        // let cont=document.body.childNodes[1]
+        // //.firstChild is text but firstElementChild is not 
+        // cont.lastElementChild.style.color = "red";
+        // cont.firstElementChild.style.backgroundColor = "green";
+        let d = document.body.firstElementChild.children[0]
+        console.log(d)
+
+        let boxes = document.getElementsByClassName("box")
+        console.log(boxes)
+
+        boxes[2].style.backgroundColor = "red"
+        document.getElementById("box4").style.backgroundColor = "green"
+
+        document.querySelector(".box").style.backgroundColor = "purple"
+        //only do with first child
+
+        // document.querySelectorAll.(".box")
+        // in above if we write .style it will give error becoz it return array use for each loop
+
+        //document.getElementbyTagName
+
+        let consh = document.querySelector(".container").innerHTML
+        console.log(consh)
+        //err handing
+        let z = 9
+        // if (isNaN(z)){
+        //     throw SyntaxError("sorry this is not num")
+        // }
+        try {
+            console.log(z)
+        } catch (error) {
+            console.log("plz give a num")
+        }
+        //finally is use in return case of function 
+    </script>
+</html>

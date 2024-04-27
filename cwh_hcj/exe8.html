@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding-top: 70vh;
+        }
+        .box{
+            width: 40px;
+            height: 6vh;
+            background-color: aqua;
+            animation: animator 4s infinite 4s alternate-reverse;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode;  */
+            animation-timing-function: ease-out;
+        }
+        .line{
+            border: 2px solid black;
+            border-radius: 34px;
+        }
+        @keyframes animator {
+            from{
+
+            }
+            to{
+                transform: translatey(-64vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+    <div class="line"></div>
+</body>
+</html>

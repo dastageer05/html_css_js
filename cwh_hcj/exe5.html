@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Navbar</title>
+  <style>
+    body {
+  margin: 2px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #FF0000; /* YouTube's red */
+  padding: 10px 0px;
+  margin: 10px 0;
+  position: sticky;
+  top: 0px;
+ 
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.red{
+    border: 2px solid black;
+    width: 48vw;
+    height: 300px;
+    background-color: #ff0000d0;
+    /* display: inline-block; */
+}
+.green{
+    border: 2px solid black;
+    width: 48vw;
+    height: 300px;
+    background-color: greenyellow;
+    display:inline-block;
+}
+.blue{
+    border: 2px solid black;
+    width: 70vw;
+    height: 300px;
+    background-color: blue;
+}
+div{
+    margin: 30px 2px;
+    display: inline-block;
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="youtube_logo.png" alt="YouTube Logo">
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button>Search</button>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Trending</a>
+        <a href="#">Subscriptions</a>
+      </div>
+      <div class="profile">
+        <img src="profile_pic.png" alt="Profile Picture">
+      </div>
+    </div>
+  </nav>
+  
+  <div class="red"></div>
+  <div class="green"></div>
+  <div class="blue"></div>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/eHye3PxH4jU?si=fS6pmFsCofeCecqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eveniet porro voluptatibus magnam laborum facilis perspiciatis dolorum esse! Sequi eaque molestias cupiditate! Eveniet soluta velit quis aspernatur voluptatum neque ut?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos aperiam, natus magnam tenetur unde dolorem quia alias! Laborum voluptatibus ad, libero incidunt dolores ipsa ratione laboriosam quo quos, explicabo aliquid.</footer>
+
+</body>
+</html>

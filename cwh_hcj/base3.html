@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic js</title>
+</head>
+
+<body>
+    <script>
+        console.log("This is learning of js")
+        let a = 4;
+        let b = {
+            name: "surya",
+            "job role": 56000
+        }
+        //b is an object data type
+        console.log(b)
+        b.name = "rohit"
+        console.log(b)
+        //let is a block scope
+        let c = 6;
+        let d = a > c ? (a - c) : (c - a);
+        console.log(d)
+        //above is one line if else satatement
+
+        for (let i = 0; i < 10; i++) {
+            console.log(a + i);
+        }
+        //their two more type for in and for of for each
+        // for (attribute in b) {
+        //     console.log(attribute);
+        // }
+        // for (const value of b) {
+        //     console.log(value)  it is for array
+        // fruits.forEach(myFunction);   it can reduce filter or any other exe 12
+
+
+        function sum(a, b, c = 4) {
+            return (a + b + c)
+        }
+        console.log("the sum is", sum())
+        console.log("the sum is", sum(7, 8))
+        result = sum(7, 8)
+        console.log("the sum is .", result)
+
+        const func1 = (x) => {
+            console.log("I am an arrow function", x)
+        }
+        func1(45)
+
+        let f = "human"
+        console.log(f.toUpperCase())
+        //string is immutable
+        let arr = [2, 3, 4, 5, 6, 5]
+        console.log(arr.length)
+        console.log(arr.toString())
+        // Array.from(obj)
+        //array is mutable
+
+    </script>
+</body>
+
+</html>

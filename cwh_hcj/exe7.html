@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            width: 100vw;
+            height: 100vh;
+            border: 0px solid ;
+            display: grid;
+            grid-template-columns:350px 350px 350px;
+        }
+        .box1{
+            border: 2px solid ;
+            height: 150px;
+            width: 350px;
+            display: grid;
+            background-color: antiquewhite;
+            margin: 40px 40px;
+            /* justify-content: center; */
+        }
+        .blue{
+            background-color: rgb(0, 174, 255);
+            border: 2px solid black;
+            border-radius: 8px;
+            height: fit-content;
+            padding: 7px;
+            margin: 3px;
+        }
+        
+        .green{
+            background-color: greenyellow;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: fit-content;
+            padding: 7px;
+            margin: 3px;
+        }
+        .headerr{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            
+        }
+        .bottom{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 15px ;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box1">
+            <div class="headerr">English</div>
+            <div class="bottom"><button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button></div>
+        </div>
+        <div class="box1">
+            <div class="headerr">Deutsch</div>
+            <div class="bottom"><button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button></div>
+        </div>
+        <div class="box1">
+            <div class="headerr">Italic</div>
+            <div class="bottom"><button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button></div>
+        </div>
+        <div class="box1">
+            <div class="headerr">Spain</div>
+            <div class="bottom"><button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button></div>
+        </div>
+        <div class="box1">
+            <div class="headerr">Urdu</div>
+            <div class="bottom"><button class="blue">Download 32-bit</button>
+            <button class="green">Download 64-bit</button></div>
+        </div>
+       
+    </main>
+</body>
+</html>

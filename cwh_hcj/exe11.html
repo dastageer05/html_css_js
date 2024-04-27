@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //exe11
+        // let fac = prompt("Enter first number")
+        // let fac1=6
+        // const factorial1 = (x) =>{
+        //     factorial1(1)=1;
+        //     return (x*factorial1(x-1))
+        // }
+        // factorial1(fac1)
+
+        let fac = 6
+        function factorial(number) {
+            let arr = Array.from(Array(number + 1).keys())
+            console.log(arr.slice(1,))
+            let c = arr.slice(1,).reduce((a, b) => a * b)
+            console.log(c)
+        }
+        factorial(fac)
+    </script>
+</body>
+
+</html>
