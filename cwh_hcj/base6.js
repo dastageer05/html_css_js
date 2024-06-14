@@ -31,3 +31,5 @@ console.log(a)
 
 let l = new Lion("Shera")
 console.log(l)
+
+// chai code
