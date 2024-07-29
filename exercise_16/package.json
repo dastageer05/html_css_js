@@ -1,0 +1,19 @@
+{
+  "name": "exercise-16",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "C:\\Users\\seema\\OneDrive\\Desktop\\Dastagir\\html_css_js\\exercise_16\\main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  }
+}
